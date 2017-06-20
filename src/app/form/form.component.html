@@ -1,0 +1,13 @@
+<div>
+<input #myInput type="text" >
+	<button (click)="onClick($event, myInput.value)">Click</button>
+</div>
+
+<div>
+	<input type="text" [(ngModel)]="formKiValue">
+	<button (click)="onClick2()">Click</button>
+
+	{{message}}
+
+	<h1>{{formKiValue}}</h1>
+</div>
