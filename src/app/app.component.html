@@ -7,5 +7,17 @@
 <app-form [message]="msg">
 	Form is loading...
 </app-form>
-<app-condition>Conditions are loading ...</app-condition>
-<app-for-loop></app-for-loop>
+<!-- <app-condition>Conditions are loading ...</app-condition>
+<app-for-loop></app-for-loop> -->
+<header>
+	<ul>
+		<li><a routerLink="/app" routerLinkActive="active">App</a></li>
+		<li><a routerLink="/test" routerLinkActive="active">Test</a></li>
+		<li><a routerLink="/form" routerLinkActive="active">Form</a></li>
+		<li><a routerLink="/loop" routerLinkActive="active">Loop</a></li>
+	</ul>
+</header>
+<hr>
+<marquee>Lulz</marquee>
+<hr>
+<router-outlet></router-outlet>

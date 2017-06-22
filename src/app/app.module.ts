@@ -10,6 +10,7 @@ import { ConditionComponent } from './condition/condition.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { MailService } from './mail.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MailService } from './mail.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [MailService],
   bootstrap: [AppComponent]
