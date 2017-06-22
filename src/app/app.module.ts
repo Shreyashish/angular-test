@@ -6,12 +6,18 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { FormComponent } from './form/form.component';
+import { ConditionComponent } from './condition/condition.component';
+import { ForLoopComponent } from './for-loop/for-loop.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    FormComponent
+    FormComponent,
+    ConditionComponent,
+    ForLoopComponent,
+    BlogCardComponent
   ],
   imports: [
     BrowserModule,
