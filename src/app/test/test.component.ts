@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MailService } from  '../mail.service';
 
 @Component({
@@ -8,11 +8,17 @@ import { MailService } from  '../mail.service';
 })
 export class TestComponent implements OnInit {
 
+  @Output() onCustomEvent = new EventEmitter();
+
   name: string = "Prince Ambawata";
 
   constructor(private mail: MailService) { }
 
   ngOnInit() {
+  }
+
+  fireCustomEvent(event) {
+  	this.onCustomEvent.emit(event);
   }
 
 }

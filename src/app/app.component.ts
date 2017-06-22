@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular is Working';
   msg = "This is a message";
+
+  someCustomEvent(event) {
+  	console.log("you called a custom event!", event);
+  }
 }
