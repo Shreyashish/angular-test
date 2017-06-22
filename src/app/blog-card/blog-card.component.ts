@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-blog-card',
@@ -12,6 +12,15 @@ export class BlogCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	console.log("Component initialised");
+  }
+
+  ngOnChanges() {
+  	console.log("on changes called");
+  }
+
+  ngAfterViewInit() {
+  	console.log("After view init called");
   }
 
 }

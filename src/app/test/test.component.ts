@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MailService } from  '../mail.service';
 
 @Component({
   selector: 'app-test',
@@ -9,7 +10,7 @@ export class TestComponent implements OnInit {
 
   name: string = "Prince Ambawata";
 
-  constructor() { }
+  constructor(private mail: MailService) { }
 
   ngOnInit() {
   }

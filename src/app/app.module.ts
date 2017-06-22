@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 import { ConditionComponent } from './condition/condition.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
+import { MailService } from './mail.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
