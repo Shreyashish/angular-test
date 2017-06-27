@@ -23,4 +23,12 @@ export class FbComponent implements OnInit {
   	);
   }
 
+  fbPostData(name, college, image) {
+  	firebase.database().ref('/').push({
+  		name: name,
+  		college: college,
+  		img: image
+  	});
+  }
+
 }

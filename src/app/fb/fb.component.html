@@ -1,3 +1,13 @@
+<form>
+	<label>Name:</label>
+	<input type="text" name="name" #name>
+	<label>College:</label>
+	<input type="text" name="college" #college>
+	<label>Image:</label>
+	<input type="text" name="img" #image>
+	<button (click)="fbPostData(name.value, college.value, image.value)">Save</button>
+</form>
+
 <div *ngFor="let student of students">
 	{{student.name}}
 	<br>
