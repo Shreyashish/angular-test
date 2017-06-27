@@ -1,0 +1,9 @@
+<div *ngFor="let student of students">
+	{{student.name}}
+	<br>
+	{{student.college}}
+	<div *ngIf="student.img">
+		<img src="{{student.img}}">
+	</div>
+	<hr>
+</div>

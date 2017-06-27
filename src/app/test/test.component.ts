@@ -21,7 +21,6 @@ export class TestComponent implements OnInit {
     this.dataService.fetchData().subscribe(
       (data) => {
         this.students = data;
-        console.log(this.students);
       }
     );
   }

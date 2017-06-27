@@ -13,6 +13,7 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
 import { MailService } from './mail.service';
 import { AppRoutingModule } from './app-routing.module';
 import { DataService } from './data.service';
+import { FbComponent } from './fb/fb.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DataService } from './data.service';
     FormComponent,
     ConditionComponent,
     ForLoopComponent,
-    BlogCardComponent
+    BlogCardComponent,
+    FbComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,10 @@ import { DataService } from './data.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [MailService, DataService],
+  providers: [
+    MailService, 
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

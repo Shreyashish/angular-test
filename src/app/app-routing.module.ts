@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { FormComponent } from './form/form.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
+import { FbComponent } from './fb/fb.component';
 
 const APP_ROUTES: Routes = [
 	{
@@ -24,6 +25,10 @@ const APP_ROUTES: Routes = [
 	{
 		path: 'loop',
 		component: ForLoopComponent
+	},
+	{
+		path: 'fb',
+		component: FbComponent
 	}
 ];
 
