@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MailService } from  '../mail.service';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-test',
@@ -12,9 +13,17 @@ export class TestComponent implements OnInit {
 
   name: string = "Prince Ambawata";
 
-  constructor(private mail: MailService) { }
+  students = [];
+
+  constructor(private mail: MailService, private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.fetchData().subscribe(
+      (data) => {
+        this.students = data;
+        console.log(this.students);
+      }
+    );
   }
 
   fireCustomEvent(event) {

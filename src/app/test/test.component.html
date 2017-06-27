@@ -8,3 +8,11 @@
 </h1>
 
 <button (click)="fireCustomEvent($event)">Click me!</button>
+
+<div *ngFor="let student of students">
+	{{student.name}}
+	{{student.college}}
+	<div *ngIf="student.img">
+		<img src="{{student.img}}">
+	</div>
+</div>
